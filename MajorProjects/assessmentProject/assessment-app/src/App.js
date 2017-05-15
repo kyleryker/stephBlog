@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
-import ItemCtrl from './ItemCtrl';
-import AddProduct from './AddProduct';
-import RemoveProduct from './RemoveProduct';
+import RatingCtrl from './ratingCtrl';
+import AddMovie from './AddMovie';
+import RemoveMovie from './RemoveMovie';
 
 class App extends Component {
     constructor() {
@@ -13,7 +13,6 @@ class App extends Component {
           prodArray: [],
           searchTerm: "",
         };
-        this.updateSearchTerm = this.updateSearchTerm.bind(this)
     };
 
     updateSearchTerm(evt) {
@@ -31,18 +30,18 @@ class App extends Component {
     }
 
     render() {
-        const dbRowsDisplay = this.state.searchTerm ? this.state.dbRows
-        .map(row => (
-            <ItemCtrl key={row.productid} id={row.productid} pName={row.productname} qAmt={row.quantity}/>
-        )) : this.state.dbRows
-        .map(row => (
-            <ItemCtrl key={row.productid} id={row.productid} pName={row.productname} qAmt={row.quantity}/>
-        ))
+        // const dbRowsDisplay = this.state.searchTerm ? this.state.dbRows
+        // .map(row => (
+        //     <ItemCtrl key={row.productid} id={row.productid} pName={row.productname} qAmt={row.quantity}/>
+        // )) : this.state.dbRows
+        // .map(row => (
+        //     <ItemCtrl key={row.productid} id={row.productid} pName={row.productname} qAmt={row.quantity}/>
+        // ))
 
         return (
          <div>
                 <div>
-                  {dbRowsDisplay}
+                  <ItemCtrl />
                 </div>
                 {/* End div for dynamically updated inventory. */}
 
