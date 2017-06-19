@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vh;
+  background-color:white;
+}
+.headerImage{
+  position: relative;
+  width: 2vw;
+  height: 3vh;
+  top: 1vh;
+  left: 1vw;
+  background-color: gray;
+}
+.headerInput{
+  position: relative;
+  left: 1vw;
+  top:1px;
+}
+.headerButton{
+  position:relative;
+  left: 1vw;
+  top: 1px;
+}
+.homeLink{
+  position:relative;
+  left: 23vw;
+  top: 1px;
+  font-size: 20px;
+}
+.latestLink{
+  position:relative;
+  left: 30vw;
+  top: 1px;
+  font-size: 20px;
+}
+.signIn{
+  float:right;
+  position: relative;
+  top: 3px;
+  right: 5vw;
+  font-size: 20px;
+}
+.sidebar{
+  position: absolute;
+  left: 0;
+  top: 5vh;
+  bottom: 0;
+  height: 95vh;
+  width: 20vw;
+  background-color:white;
+}
+.sidebarHeader{
+  text-align: center;
+}
+.sidebarList{
+  text-align: left;
+  list-style: none;
+}
+.blog{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 5vh; 
+  width: 80vw;
+background: linear-gradient(90deg,white, rgb(241, 163, 196));
+}
+.blogHeader{
+  position: relative;
+  left: 20vw;
+  font-size: 55px;
+font-family: 'Pacifico', cursive;
+margin: 0;
+}
+.blogSubHeader{
+  position: relative;
+  left: 18vw;
+}
+.date{
+  height: 3vh;
+  width: 10vw;
+  background-color: rgb(249, 245, 247);
+  position: relative;
+  left: 5vw;
+  right: 7vw;
+}
+.postTitle{
+  position:relative;
+  left: 5vw;
+}
+.postText{
+  position:relative;
+  margin: 0 5vw;
+}
+.postImage{
+  margin: 15px 5vw;
+  width: 20vw;
+  height: 25vh;
+  background-color: lightgray;
+}
