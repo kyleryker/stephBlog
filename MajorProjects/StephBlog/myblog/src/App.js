@@ -6,8 +6,12 @@ import axios from 'axios';
 class App extends Component {
 
   componentDidMount () {
-    axios.get('http://localhost:3001/')
-  }
+    axios.get('http://localhost:3002/allposts').then((res) => {
+      this.database = res.data.map(row => (
+        <Post key={row.id} id={row.id} date={row.date} title={row.title} image={row.image} words={row.words} />
+      ));
+    });
+  };
 
 
   render() {
