@@ -12,6 +12,7 @@ constructor(props){
     Picture = '',
     Text = ''
   }
+  this.handleButtonPress = this.handleButtonPress.bind(this);
 }
 
 handleButtonPress(event) {
@@ -29,7 +30,7 @@ handleButtonPress(event) {
     <input value=newDate />
     <input value=newPicture />
     <input value=newText />
-    <button />
+    <button onClick={this.handleButtonPress}/>
     </div>
 
 }

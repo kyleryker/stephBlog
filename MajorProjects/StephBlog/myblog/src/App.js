@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 class App extends Component {
 
@@ -18,6 +19,14 @@ class App extends Component {
     return (
 <div>
       <header class="header">
+        <Router>
+          <div>
+            <Route path='/' component={App}/>
+            <Route path='/post:id' component={Post} />
+            <Route path='/signin' component={SignIn} />
+            <Route path='newPost' component={AddPost} />
+          </div>
+        </Router>
           <img class="headerImage" />
           <input class="headerInput" />
           <button class="headerButton">
@@ -39,7 +48,7 @@ class App extends Component {
           <h1 class="blogHeader"> Bath Bomb Crazy </h1>
           <h3 class="blogSubHeader"> Tutorials on how to make your own bath and body products. </h3>
           </div>
-          <Post>
+          <Post/>
           </div>
     );
   }
